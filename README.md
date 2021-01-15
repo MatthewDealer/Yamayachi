@@ -1,2 +1,2 @@
-# yamayachi
+# Yamayachi
 Yamayachi Website
