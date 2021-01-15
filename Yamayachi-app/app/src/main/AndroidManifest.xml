@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.yamayachi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yamayachi">
+        <activity android:name=".AboutAuthor"></activity>
+        <activity android:name=".UserSettings" />
+
+        <service
+            android:name=".BackgroundSoundService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".BackgroundSelect"
+            android:label="@string/title_activity_background_select"
+            android:theme="@style/Theme.Yamayachi.NoActionBar" />
+        <activity
+            android:name=".HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

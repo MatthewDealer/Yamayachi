@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_holder"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/mascotBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/body"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_repeatMode="reverse"/>
+
+
+    <ImageView
+        android:id="@+id/mascotHead"
+        android:layout_width="176dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="316dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/macot_head"
+        tools:srcCompat="@drawable/macot_head" />
+
+    <ImageView
+        android:id="@+id/homeButton"
+        android:layout_width="46dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:onClick="goToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/eyeRight"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="404dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageView
+        android:id="@+id/eyeLeft"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="404dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eye" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/snackButton"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:backgroundTint="#03A9F4"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton"
+        app:layout_constraintVertical_bias="0.954"
+        app:maxImageSize="48dp"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/snacks_icon" />
+
+    <ImageView
+        android:id="@+id/snackMenuBg"
+        android:layout_width="108dp"
+        android:layout_height="252dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/snackButton"
+        app:layout_constraintEnd_toStartOf="@+id/snackButton"
+        app:srcCompat="@drawable/snack_menu_bg"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/snackView1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/snackButton"
+        app:layout_constraintTop_toTopOf="@+id/snackMenuBg"
+        app:srcCompat="@drawable/snack1" />
+
+    <ImageView
+        android:id="@+id/snackView2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/snackButton"
+        app:layout_constraintTop_toBottomOf="@+id/snackView1"
+        app:srcCompat="@drawable/snack3" />
+
+    <ImageView
+        android:id="@+id/snackView3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/snackButton"
+        app:layout_constraintTop_toBottomOf="@+id/snackView2"
+        app:srcCompat="@drawable/snack2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
